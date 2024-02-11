@@ -1,29 +1,198 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio Profesional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+        }
+        
+        h1, h2, h3 {
+            margin: 0;
+        }
+        
+        .profile-info {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .profile-info img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .social-links {
+            list-style-type: none;
+            padding: 0;
+            text-align: right;
+        }
+        
+        .social-links li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        .social-links li:first-child {
+            margin-left: 0;
+        }
+        
+        .social-links a {
+            text-decoration: none;
+            color: #0a0707;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #e9901d;
+        }
+        
+        section {
+            background-color: rgba(212, 212, 212, 0.9);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(187, 187, 187, 0.2);
+            position: relative;
+            z-index: 2;
+        }
+        
+        section h2 {
+            border-bottom: 2px solid #c71515;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        section article {
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #000000;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1;
+        }
+   
+    </style>
 </head>
 <body>
-    <h2><strong>Mi pagina web</strong></h2>
-    <a href="activitats/activitats.html">anar a activitats</a>
+    <header>
+        <div>
+            <h1>Portafolio Iker Jurado Madrid</h1>
+            <ul class="social-links">
+                <li><a href="https://www.instagram.com/iikerjm/" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter" target="_blank">CV</a></li>
+                <li><a href="https://github.com/rekyjm/prova" target="_blank">GitHub</a></li>
+                <li><a href="activitats/Activitats.html">Activitats HTML Y CSS</a></p>
+
+            
+            </ul>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReU9p0RIm0xVmnH50cosfpCJsDweUx9eOblg&usqp=CAU" alt="Foto de Perfil">
+    </header>
+    
+    <div class="profile-info">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzlhLHFyezHThBUrEgJRaA6yN8_-IEMC-cZQ&usqp=CAU" alt="Foto de Fondo">
+        <h2>Perfil Personal</h2>
+        <p>Soy un chico de 18 años de edad que actualmente estudia un ciclo de Sistemas microinformaticos y xarxas. Llevo poco tiempo estudiando informatica pero con muchas ganas de aprender nuevas cosas y nuevos lenguajes de programacion.</p>
+    </div>
+    
+    <section id="experiencia">
+        <h2>Experiencia Laboral</h2>
+        <article>
+            <h3>Bon Area</h3>
+            <p><strong>Fecha de Empleo:</strong> [10/1/2023] - [1/8/2023]</p>
+            <p>Cajero/Fronteador.</p>
+        </article>
+        
+    </section>
+    
+    <section id="educacion">
+        <h2>Educación</h2>
+        <article>
+            <h3>Estudios secundarios obligatorios (ESO)</h3>
+            <p><strong>Fecha de Graduación:</strong> [22/6/2022]</p>
+            <h3>Sistemas microinformaticos y xarxas (SMIX)</h3>
+            <p><strong>Actualmente estudiando</strong> </p>
+        </article>
+    </section>
+    
+    <section id="habilidades">
+        <h2>Lenguajes de programacion </h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Aprendiendo javascript</li>
+            
+        </ul>
+    </section>
+    
+    <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <article>
+            <h3>Nombre del Proyecto</h3>
+            <p>Descripción del proyecto y tu contribución a él.</p>
+        </article>
+        
+    </section>
+    <footer>
+        <p>&copy; 2024 - Portafolio Profesional - [Tu Nombre]</p>
+    </footer>
+    <section id="contacto">
+        <h2>Contáctame</h2>
+        <p>Si deseas ponerte en contacto conmigo, no dudes en enviarme un mensaje:</p>
+        <form action="contacto.php" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+ 
 </body>
 </html>
+
+
+
+
+
+
+
